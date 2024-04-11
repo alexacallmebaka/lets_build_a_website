@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <title>workshop sign in ✒️</title>
+  </head>
+
+  <body>
+
+    <div class="sign-in">
+
+    <h1>Welcome to James's Workshop 👋</h1>
+
+      <form action="/update-names" method="post">
+        <label for="name" id="name-label">Enter your name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <input type="submit" value="Sign in" class="button" >
+      </form>
+
+    </div>
+
+  </body>
+
+</html>

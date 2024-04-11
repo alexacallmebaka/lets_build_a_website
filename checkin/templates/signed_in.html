@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+    <title>signed in😎</title>
+  </head>
+
+  <body>
+
+    <div class="sign-in">
+      <h1>You have signed in 🤩</h1>
+      
+      <a href="/">
+        <button class="button">Go back</button>
+      </a>
+
+    </div>
+
+    <div id = "names">
+      <h1>Who's all here? 👀</h1>
+      {% for name in names %}
+        <span class="name">{{ name }}</span>
+      {% endfor %}
+    </div>
+
+  </body>
+
+</html>
